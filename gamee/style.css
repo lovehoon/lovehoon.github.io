@@ -1,0 +1,55 @@
+/* סגנון כללי לגוף הדף */
+body {
+    background-color: rgb(238, 189, 129);
+    transition: background-color 0.5s;
+    text-align: center;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* סגנון לכותרת והניקוד */
+  h1, p {
+    transition: color 0.5s, transform 0.5s;
+  }
+  
+  /* סגנון לכותרת הראשית */
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  /* סגנון לתמונה של החץ */
+  #arrowId {
+    position: absolute;
+    width: 100px;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: downAnmia 3s infinite;
+  }
+  
+  /* אנימציה לנפילת החץ */
+  @keyframes downAnmia {
+    0% { top: -100%; }
+    100% { top: 100%; }
+  }
+  
+  /* סגנון עבור לחיצה נכונה */
+  .correct {
+    color: green;
+    transform: scale(1.2);
+  }
+  
+  /* סגנון עבור לחיצה לא נכונה */
+  .incorrect {
+    color: red;
+    transform: scale(0.8);
+  }
+  
+  /* סגנון עבור סוף משחק */
+  .game-over {
+    color: red;
+    font-size: 2em;
+    transition: color 0.5s;
+  }
+  
